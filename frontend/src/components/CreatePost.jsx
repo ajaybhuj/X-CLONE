@@ -24,7 +24,7 @@ const CreatePost = () => {
               />
             </div>
             <input
-              className="w-full outline-none border-none text-lg ml-2"
+              className="w-full outline-none border-none text-xl ml-2"
               type="text"
               placeholder="What is happening?"
             />

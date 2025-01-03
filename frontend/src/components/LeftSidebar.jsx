@@ -5,6 +5,7 @@ import { CgProfile } from "react-icons/cg";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { CiLogout } from "react-icons/ci";
 import { CiHashtag } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const LeftSideBar = () => {
   return (
@@ -18,12 +19,15 @@ const LeftSideBar = () => {
           />
         </div>
         <div className="my-4">
-          <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 rounded-full cursor-pointer">
+          <Link
+            to={"/"}
+            className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 rounded-full cursor-pointer"
+          >
             <div>
               <CiHome size="24px" />
             </div>
             <h1 className="font-bold text-lg ml-2">Home</h1>
-          </div>
+          </Link>
           <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 rounded-full cursor-pointer">
             <div>
               <CiHashtag size="24px" />
@@ -36,12 +40,15 @@ const LeftSideBar = () => {
             </div>
             <h1 className="font-bold text-lg ml-2">Notification</h1>
           </div>
-          <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 rounded-full cursor-pointer">
+          <Link
+            to={"/profile"}
+            className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 rounded-full cursor-pointer"
+          >
             <div>
               <CgProfile size="24px" />
             </div>
             <h1 className="font-bold text-lg ml-2">Profile</h1>
-          </div>
+          </Link>
           <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 rounded-full cursor-pointer">
             <div>
               <CiBookmarkCheck size="24px" />

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Profile = () => {
   return (
     <div>
-      <div className="">
+      <div className="border-l border-r  border-gray-200">
         <div className="flex items-center">
           <Link
             to={"/"}
@@ -30,8 +30,22 @@ const Profile = () => {
             round={true}
           />
         </div>
-        <div>
-          <button>Edit profile</button>
+        <div className="text-right m-3">
+          <button className="px-4 py-1 rounded-full  border border-gray-400 hover:bg-gray-400">
+            Edit profile
+          </button>
+        </div>
+        <div className="mx-2">
+          <h1 className="font-bold text-xl">Ajay Bhuj</h1>
+          <p>@ajaybhuj56</p>
+        </div>
+        <div className="m-1 text-sm ">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut
+            ullam voluptatem voluptatibus, illo quo, officia neque magnam
+            consectetur, dolores nam alias minima doloribus. Expedita eveniet
+            doloremque rem ducimus accusamus!
+          </p>
         </div>
       </div>
     </div>
